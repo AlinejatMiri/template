@@ -20,19 +20,13 @@
             <h1 class="text-xl font-bold text-red-600">مؤسسه خیریه ❤️</h1>
 
             <ul class="flex gap-8 text-lg">
-                <li><a href="/" class="hover:text-red-600">خانه</a></li>
-                <li><a href="/about" class="hover:text-red-600">درباره ما</a></li>
-                <li><a href="/services" class="hover:text-red-600">خدمات ما</a></li>
-                <li><a href="/team" class="hover:text-red-600">تیم ما</a></li>
-                <li><a href="/contact" class="hover:text-red-600">تماس با ما</a></li>
 
-                <li>
-                    <a href="{{ route('donate') }}" class="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700">
-                        کمک مالی
-                    </a>
-                </li>
+                <li><a href="{{route('home')}}" class="hover:text-red-600">
+                    <button class="bg-red-600 text-white px-6 py-2 rounded-lg hover:bg-red-700 transition font-medium" id="denote_btn">
+                    خانه
+                </button></a></li>
+
             </ul>
-
         </div>
     </nav>
 
