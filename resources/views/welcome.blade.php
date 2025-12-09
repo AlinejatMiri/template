@@ -32,7 +32,7 @@
                     <a href="#team" class="text-gray-700 hover:text-red-600 transition">تیم ما</a>
                     <a href="#contact" class="text-gray-700 hover:text-red-600 transition">تماس با ما</a>
                 </div>
-                <button class="bg-red-600 text-white px-6 py-2 rounded-lg hover:bg-red-700 transition font-medium">
+                <button class="bg-red-600 text-white px-6 py-2 rounded-lg hover:bg-red-700 transition font-medium" id="denote_btn">
                     کمک مالی
                 </button>
             </div>
@@ -365,6 +365,9 @@
                     target.scrollIntoView({ behavior: 'smooth' });
                 }
             });
+        });
+        document.querySelector("#denote_btn").addEventListener("click", function() {
+            window.location.href = "{{ route('donate') }}";
         });
     </script>
     {{-- <script src="{{asset('js/app.js')}}"></script> --}}

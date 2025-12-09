@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مؤسسه خیریه</title>
+
+    <!-- TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md py-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center px-6">
+
+            <h1 class="text-xl font-bold text-red-600">مؤسسه خیریه ❤️</h1>
+
+            <ul class="flex gap-8 text-lg">
+                <li><a href="/" class="hover:text-red-600">خانه</a></li>
+                <li><a href="/about" class="hover:text-red-600">درباره ما</a></li>
+                <li><a href="/services" class="hover:text-red-600">خدمات ما</a></li>
+                <li><a href="/team" class="hover:text-red-600">تیم ما</a></li>
+                <li><a href="/contact" class="hover:text-red-600">تماس با ما</a></li>
+
+                <li>
+                    <a href="{{ route('donate') }}" class="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700">
+                        کمک مالی
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <main class="min-h-screen">
+        <div class="py-16">
+
+    <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-xl p-10">
+
+        <h1 class="text-4xl font-bold text-center text-red-600 mb-6">
+            اهدای کمک مالی
+        </h1>
+
+        <p class="text-center text-gray-700 mb-10">
+            با کمک شما می‌توانیم زندگی افراد نیازمند را بهتر کنیم.
+            هر مبلغی که اهدا می‌کنید، اثر بزرگی در حمایت از خانواده‌های کم‌درآمد دارد.
+        </p>
+
+        <form method="POST" action="#">
+            @csrf
+
+            <div class="mb-6">
+                <label class="block font-semibold mb-2 text-lg">نام کامل</label>
+                <input type="text" name="name"
+                       class="w-full p-3 border rounded-lg focus:outline-none"
+                       required>
+            </div>
+
+            <div class="mb-6">
+                <label class="block font-semibold mb-2 text-lg">ایمیل</label>
+                <input type="email" name="email"
+                       class="w-full p-3 border rounded-lg"
+                       required>
+            </div>
+
+            <div class="mb-6">
+                <label class="block font-semibold mb-2 text-lg">مبلغ کمک (افغانی)</label>
+                <input type="number" name="amount"
+                       class="w-full p-3 border rounded-lg"
+                       required>
+            </div>
+
+            <div class="mb-6">
+                <label class="block font-semibold mb-2 text-lg">پیام اختیاری</label>
+                <textarea name="message" rows="4"
+                          class="w-full p-3 border rounded-lg"></textarea>
+            </div>
+
+            <div class="text-center">
+                <button
+                    class="bg-red-600 text-white px-10 py-3 rounded-lg text-xl hover:bg-red-700 transition">
+                    ارسال کمک
+                </button>
+            </div>
+        </form>
+
+        <p class="text-center text-gray-500 mt-10">
+            تمامی کمک‌های شما صرف غذا، درمان، پوشاک و آموزش نیازمندان می‌شود.
+        </p>
+
+    </div>
+
+</div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white text-center py-6 mt-10 shadow-inner">
+        <p class="text-gray-600">© 2025 مؤسسه خیریه - تمام حقوق محفوظ است.</p>
+    </footer>
+
+</body>
+
+</html>
