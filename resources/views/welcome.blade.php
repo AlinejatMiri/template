@@ -72,7 +72,7 @@
             </div>
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div>
-                    <img src="https://images.unsplash.com/photo-1559027615-cd2628902d4a?w=500&h=500&fit=crop" alt="درباره ما" class="rounded-lg shadow-lg">
+                    <img src="{{asset('images/about.jpg')}}" alt="درباره ما" class="rounded-lg shadow-lg">
                 </div>
                 <div>
                     <h3 class="text-3xl font-bold text-gray-900 mb-6">ماموریت ما</h3>
@@ -274,7 +274,7 @@
                             </div>
                             <div>
                                 <h4 class="font-bold text-gray-900 mb-1">آدرس</h4>
-                                <p class="text-gray-600">تهران، خیابان انقلاب، شماره ۱۲۳</p>
+                                <p class="text-gray-600">کابل ، شهرنو ، پلاک 23</p>
                             </div>
                         </div>
                         <div class="flex gap-4">
@@ -283,7 +283,7 @@
                             </div>
                             <div>
                                 <h4 class="font-bold text-gray-900 mb-1">تلفن</h4>
-                                <p class="text-gray-600">۰۲۱-۱۲۳۴۵۶۷۸</p>
+                                <p class="text-gray-600">0798203578</p>
                             </div>
                         </div>
                         <div class="flex gap-4">
